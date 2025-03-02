@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Timeless Classics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Timeless Classics</h1>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav id="mobile-menu">
+            <a href="\index.html">Home</a>
+            <a href="\About page\about.html">About</a>
+            <a href="\Gallery Page\gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook" width="30" height="30" style="margin: 0 5px ; display: inline-block;" title="facebook"></a>
+                <a href="#"><img src="insta.png" alt="Instagram" width="30" height="30" style="margin: 0 5px; display: inline-block;" title="instgram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter" width="30" height="30" style="margin: 0 5px; display: inline-block;" title="twitter"></a>
+            </div>
+            <div class="contact-info">
+                <h2 style="margin-bottom: 25px;">Get in Touch</h2>
+                <p><strong>📍 Address:</strong> 60 street, Sanaa, Yemen</p>
+                <p><strong>📞 Phone:</strong> +967 730000000</p>
+                <p><strong>📧 Email:</strong> timelessclassics@gmail.com</p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <footer>
+        &copy; 2025 Timeless Classics. All rights reserved. | Visit us at
+        <a href="https://www.timelessclassics.com">www.timelessclassics.com</a>
+    </footer>
+
+</body>
+
+</html>
+<script>
+    function toggleMenu() {
+        let nav = document.getElementById("mobile-menu");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    }
+</script>
