@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery - Timeless Classics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Timeless Classics</h1>
+        <span class="menu-toggle" onclick="toggleMenu('M')">☰</span>
+        <nav id="mobile-menu">
+            <a href="\index.html">Home</a>
+            <a href="\About page\about.html">About</a>
+            <a href="\contact page\contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+
+        <div class="gallery-card"
+            onclick="openModal('1967 Mustang', 'The 1967 Mustang is a classic American muscle car known for its aggressive styling and powerful V8 engine.', ['Deco Rides/Deco_Boattail-04-1024.jpg', 'Deco Rides/Deco_Boattail-05-1024.jpg', 'Deco Rides/Deco_Boattail-07-1024.jpg','Deco Rides/Deco_Boattail-12-1024.jpg','Deco Rides/Deco_Boattail-14-1024.jpg','Deco Rides/Deco_Boattail-16-1024.jpg','Deco Rides/Deco_Boattail-17-1024.jpg','Deco Rides/Deco_Boattail-18-1024.jpg','Deco Rides/Deco_Boattail-19-1024.jpg','Deco Rides/Deco_Boattail-20-1024.jpg','Deco Rides/Deco_Boattail-23-1024.jpg','Deco Rides/Deco_Boattail-24-1024.jpg'])">
+            <img src="Deco Rides/Deco_Boattail-08-1024.jpg" alt="1967 Mustang" class="gallery-image">
+            <div class="info-box">
+                <h3>1967 Mustang</h3>
+                <p>Added on: January 15, 2023</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+            onclick="openModal('1969 Camaro', 'The 1969 Camaro is an iconic Chevrolet muscle car, a favorite among car enthusiasts for its design and performance.', ['Foose/Foose_Coupe_2008__01_1024x768.jpg', 'Foose/Foose_Coupe_2008__04_1024x768.jpg', 'Foose/Foose_Coupe_2008__05_1024x768.jpg','Foose/Foose_Coupe_2008__07_1024x768.jpg','Foose/Foose_Coupe_2008__10_1024x768.jpg','Foose/Foose_Coupe_2008__12_1024x768.jpg','Foose/Foose_Coupe_2008__14_1024x768.jpg','Foose/Foose_Coupe_2008__15_1024x768.jpg','Foose/Foose_Coupe_2008__16_1024x768.jpg','Foose/Foose_Coupe_2008__17_1024x768.jpg','Foose/Foose_Coupe_2008__18_1024x768.jpg'])">
+            <img src="Foose/Foose_Coupe_2008__02_1024x768.jpg" alt="1969 Camaro" class="gallery-image">
+            <div class="info-box">
+                <h3>1969 Camaro</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+            onclick="openModal('1932 Ford V8', 'The 1969 Camaro is an iconic Chevrolet muscle car, a favorite among car enthusiasts for its design and performance.', ['https://www.supercars.net/blog/wp-content/uploads/2016/04/1004446.jpg', 'https://www.supercars.net/blog/wp-content/uploads/2016/04/1004516.jpg', 'https://www.supercars.net/blog/wp-content/uploads/2016/04/1008014.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/1047710.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/1047766.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/1057677-1024.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/1078431-1024.jpg'])">
+            <img src="https://www.supercars.net/blog/wp-content/uploads/2016/04/1004368.jpg" alt="1969 Camaro"
+                class="gallery-image">
+            <div class="info-box">
+                <h3>1932 Ford V8</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+            onclick="openModal('1969 Camaro', 'The 1969 Camaro is an iconic Chevrolet muscle car, a favorite among car enthusiasts for its design and performance.', ['https://www.supercars.net/blog/wp-content/uploads/2016/04/934191-770x514.jpg', 'https://www.supercars.net/blog/wp-content/uploads/2016/04/934190-770x514.jpg', 'https://www.supercars.net/blog/wp-content/uploads/2016/04/934264-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/934194-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/934265-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/953838-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/953839-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/954006-770x514.jpg','https://www.supercars.net/blog/wp-content/uploads/2016/04/954130-770x514.jpg'])">
+            <img src="https://www.supercars.net/blog/wp-content/uploads/2016/04/934194-770x514.jpg" alt="1969 Camaro"
+                class="gallery-image">
+            <div class="info-box">
+                <h3>1935 Bugatti Type 57C</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="carModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h3 id="modalTitle">Car Name</h3>
+            <p id="modalDescription">Description of the car goes here.</p>
+            <div id="modalGallery" class="modal-gallery"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="imageViewer">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeImageViewer()">×</button>
+            <button id="prevBtn" class="prev-btn" onclick="prevImage()">❮</button>
+            <img id="viewerImage" src="" alt="Large View">
+            <button id="nextBtn" class="next-btn" onclick="nextImage()">❯</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Timeless Classics. All rights reserved. | Visit us at
+        <a href="https://www.timelessclassics.com">www.timelessclassics.com</a>
+    </footer>
+
+    <body>
+
+</html>
+<script>
+    let imagesArray = [];
+    let currentImageIndex = 0;
+
+    function openModal(title, description, images) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalDescription').innerText = description;
+
+        const modalGallery = document.getElementById('modalGallery');
+        modalGallery.innerHTML = '';
+
+        imagesArray = images;
+        imagesArray.forEach((image, index) => {
+            const img = document.createElement('img');
+            img.src = image;
+            img.alt = `${title} - Image ${index + 1}`;
+            img.classList.add('gallery-thumbnail');
+            img.onclick = () => openImageViewer(index);
+            modalGallery.appendChild(img);
+        });
+
+        document.getElementById('carModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('carModal').style.display = 'none';
+    }
+
+    function openImageViewer(index) {
+        currentImageIndex = index;
+        document.getElementById('viewerImage').src = imagesArray[currentImageIndex];
+        document.getElementById('imageViewer').style.display = 'flex';
+
+        document.getElementById('prevBtn').style.display = imagesArray.length > 1 ? 'block' : 'none';
+        document.getElementById('nextBtn').style.display = imagesArray.length > 1 ? 'block' : 'none';
+    }
+
+    function closeImageViewer() {
+        document.getElementById('imageViewer').style.display = 'none';
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+        document.getElementById('viewerImage').src = imagesArray[currentImageIndex];
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+        document.getElementById('viewerImage').src = imagesArray[currentImageIndex];
+    }
+
+    function toggleMenu() {
+        let nav = document.getElementById("mobile-menu");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    }
+
+</script>
